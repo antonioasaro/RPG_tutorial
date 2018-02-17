@@ -1987,7 +1987,7 @@ MonoBehaviour:
   TheDistance: 0
   FakeSword: {fileID: 1217825198}
   RealSword: {fileID: 1874991767}
-  ActionDisplay: {fileID: 1902454674}
+  ActionCharacter: {fileID: 1902454674}
   ActionText: {fileID: 271086661}
   TheObjective: {fileID: 18399344}
   ChestBlock: {fileID: 671112671}
@@ -3290,7 +3290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TheDistance: 0
   TreasureChest: {fileID: 817608389}
-  ActionDisplay: {fileID: 1902454674}
+  ActionCharacter: {fileID: 1902454674}
   ActionText: {fileID: 271086661}
   TheObjective: {fileID: 1563585248}
   CloseObjective: 0
@@ -4064,7 +4064,7 @@ GameObject:
   - component: {fileID: 1902454677}
   - component: {fileID: 1902454676}
   m_Layer: 5
-  m_Name: ActionDisplay
+  m_Name: ActionCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

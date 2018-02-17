@@ -7,7 +7,7 @@ public class Q001_Obejective02 : MonoBehaviour {
 
 	public float TheDistance;
 	public GameObject TreasureChest;
-	public GameObject ActionDisplay;
+	public GameObject ActionCharacter;
 	public GameObject ActionText;
 	public GameObject TheObjective;
 	public int CloseObjective;
@@ -29,7 +29,7 @@ public class Q001_Obejective02 : MonoBehaviour {
 		if (TheDistance <= 3f) {
 			ActionText.GetComponent<Text>().text = "Open Chest";
 			ActionText.SetActive (true);
-			ActionDisplay.SetActive (true);
+			ActionCharacter.SetActive (true);
 		}
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3f) {
@@ -38,14 +38,14 @@ public class Q001_Obejective02 : MonoBehaviour {
 				TakeSword.SetActive (true);
 				CloseObjective = 3;
 				ActionText.SetActive (false);
-				ActionDisplay.SetActive (false);
+				ActionCharacter.SetActive (false);
 			}
 		}
 	}
 
 	void OnMouseExit() {
 		ActionText.SetActive (false);
-		ActionDisplay.SetActive (false);
+		ActionCharacter.SetActive (false);
 	}
 
 

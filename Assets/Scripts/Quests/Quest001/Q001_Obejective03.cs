@@ -8,7 +8,7 @@ public class Q001_Obejective03 : MonoBehaviour {
 	public float TheDistance;
 	public GameObject FakeSword;
 	public GameObject RealSword;
-	public GameObject ActionDisplay;
+	public GameObject ActionCharacter;
 	public GameObject ActionText;
 	public GameObject TheObjective;
 	public GameObject ChestBlock;
@@ -30,7 +30,7 @@ public class Q001_Obejective03 : MonoBehaviour {
 		if (TheDistance <= 3f) {
 			ActionText.GetComponent<Text>().text = "Take Sword";
 			ActionText.SetActive (true);
-			ActionDisplay.SetActive (true);
+			ActionCharacter.SetActive (true);
 		}
 		if (Input.GetButtonDown ("Action")) {
 			if (TheDistance <= 3f) {
@@ -40,14 +40,14 @@ public class Q001_Obejective03 : MonoBehaviour {
 				ChestBlock.SetActive (true);
 				CloseObjective = 3;
 				ActionText.SetActive (false);
-				ActionDisplay.SetActive (false);
+				ActionCharacter.SetActive (false);
 			}
 		}
 	}
 
 	void OnMouseExit() {
 		ActionText.SetActive (false);
-		ActionDisplay.SetActive (false);
+		ActionCharacter.SetActive (false);
 	}
 
 
